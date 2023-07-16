@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Final</title>
+
+    <link rel="icon" href="../Web3/image/icon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* Style Saya */
+
+        body {
+            background-color: rgb(35, 32, 32);
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 18px;
+            height: 2000px;
+            color: whitesmoke;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .watermark {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 100px;
+            display: inline-block;
+            background-color: rgb(12, 25, 63);
+        }
+
+        .watermark img {
+            width: 45px;
+            height: 45px;
+            margin: 0 30px;
+        }
+
+        .watermark ul li {
+            display: inline-block;
+            padding: 10px;
+            position: relative;
+            top: -70px;
+            left: 300px;
+            margin: auto;
+        }
+
+
+        .watermark a {
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            width: fit-content;
+            margin: auto;
+        }
+
+        .watermark a:hover {
+            background-color: royalblue;
+            color: whitesmoke;
+            transition: 0.3s;
+            border-radius: 20px;
+        }
+
+        img#ig {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
+
+        img#wa {
+            position: absolute;
+            right: 80px;
+            top: 18px;
+        }
+
+        .watermark h1 {
+            font-weight: bold;
+            padding: 45px;
+            font-size: 40px;
+            display: inline-block;
+        }
+
+
+        .container {
+            margin: 100px auto;
+            border: 1px solid rgb(200, 200, 200);
+            width: 960px;
+            background-color: rgb(33, 33, 33);
+        }
+
+        .header h1 {
+            font-weight: bold;
+            font-size: 50px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .header ul li {
+            display: inline-block;
+            padding: 10px;
+
+        }
+
+        .header a {
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .header a:hover {
+            background-color: royalblue;
+            color: whitesmoke;
+        }
+
+        .hero {
+            height: 360px;
+            border: 2px solid royalblue;
+            box-sizing: border-box;
+            margin: 20px 0;
+
+            background-image: url(../Web3/image/hero.jpeg);
+            background-size: cover;
+            background-position: 0 -130px;
+        }
+
+        .main {
+            width: 600px;
+            border-right: 2px solid black;
+            float: left;
+        }
+
+        .main h2 {
+            font-weight: bold;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .main p.credit {
+            font-size: 10px;
+            padding: 0px 10px;
+            text-indent: 0px;
+        }
+
+        .name-cr {
+            color: royalblue;
+            padding: 5px;
+        }
+
+        .name-cr:hover {
+            background-color: royalblue;
+            color: whitesmoke;
+            font-size: 15px;
+        }
+
+        .main p {
+            text-indent: 20px;
+            line-height: 25px;
+            padding: 10px;
+        }
+
+        .sidebar {
+            float: right;
+            width: 300px;
+            border-left: 2px solid black;
+            height: 100%;
+        }
+
+        .sidebar h3 {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .profil {
+            float: left;
+            width: 60px;
+            height: 60px;
+            padding: 10px;
+        }
+
+        .sidebar p {
+            font-size: 10px;
+            padding: 10px;
+            text-indent: 10px;
+            line-height: 12px;
+        }
+
+        .footer {
+            width: 960px;
+            background-color: rgb(3, 3, 54);
+            height: 50px;
+            text-align: center;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+
+        .footer .copy {
+            font-size: 20px;
+        }
+
+
+
+        /*Clearfix Buat clear float */
+
+        .cf:before,
+        .cf:after {
+            content: " ";
+            /* 1 */
+            display: table;
+            /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        /**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+        .cf {
+            *zoom: 1;
+        }
+
+        /* Aturan Reset CSS */
+
+        /* Aturan Style Saya */
+
+        /* ... aturan CSS lainnya ... */
+
+        /* Media Query untuk perangkat mobile */
+        @media (max-width: 756px) {
+            body {
+                font-size: 14px;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .header ul li {
+                display: inline-block;
+                padding: 10px 0;
+            }
+
+            .header a {
+                color: royalblue
+            }
+
+            .main {
+                width: 100%;
+                border-right: none;
+                float: none;
+            }
+
+            .sidebar {
+                float: none;
+                width: 100%;
+                border-left: none;
+                margin-top: 20px;
+            }
+
+            .footer {
+                width: 100%;
+            }
+
+            .hero {
+                background-size: cover;
+                background-position: 0 -10px;
+                height: 320px;
+            }
+
+            .sidebar {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="watermark cf">
+
+        <h1 title="SUka SUka">Mengreview</h1>
+        <ul>
+            <li><a href="#">Home</a>|</li>
+            <li><a href="../web 2/index.html">About</a>|</li>
+            <li><a href="#">Contact</a>|</li>
+            <li><a href="#">Privacy</a>|</li>
+
+        </ul>
+
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Mengreview</h1>
+
+            <ul>
+                <li><a href="#">Home</a>|</li>
+                <li><a href="#">About</a>|</li>
+                <li><a href="#">Contact</a>|</li>
+                <li><a href="#">Privacy</a>|</li>
+            </ul>
+        </div>
+
+        <div class="hero" title="orang buat tandu"></div>
+        <div class="content cf">
+            <div class="main">
+                <h2>Tandu Darurat</h2>
+                <p class="credit">Ditulis oleh
+                    <a title="Yang buat" class="name-cr" href="http://instagram.com/iniralfi" target="_blank">Rafli
+                        Pratama</a>
+                    Pada Tanggal 3 Juli 2023
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ad id quod, voluptatibus magnam quos
+                    voluptatem ab, a tenetur ex optio quas deleniti nemo doloribus cum sed. Earum, reiciendis. Veritatis
+                    dolor mollitia neque illo eligendi numquam, a officia debitis odit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea veritatis libero dolor, quos provident
+                    neque! Voluptatibus rerum aliquam deleniti praesentium alias, nihil libero sint inventore quo? Quos
+                    iste quas itaque, accusamus recusandae sint, blanditiis laboriosam sequi voluptatem nobis
+                    accusantium sapiente doloremque, a est dignissimos consequuntur dolorem officiis. Recusandae
+                    repellat nihil adipisci possimus maiores, ipsum tenetur dolores maxime dolorem tempore libero iusto
+                    mollitia laudantium sapiente molestiae saepe expedita. Officiis quae magnam quidem. Fugit aliquid
+                    eum nesciunt dicta nihil vitae et possimus omnis architecto enim laborum reiciendis tempora dolorem
+                    voluptas ducimus consequatur sapiente sit nisi, quam id veritatis ratione nobis deleniti quo.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quidem, repellat harum nobis
+                    sequi, ullam libero omnis quas reiciendis minima accusamus, excepturi nihil quia magni placeat
+                    impedit? Praesentium a earum necessitatibus perferendis doloremque dolorem aspernatur quaerat labore
+                    sapiente totam excepturi facere voluptate nemo tenetur unde quas ducimus animi, est asperiores
+                    itaque quia fugiat nobis quam! Ipsum quia iusto voluptas repellendus dicta, illum voluptatem
+                    accusantium quaerat, quas autem iure id rerum?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ad fuga cumque sunt perferendis
+                    esse, aut error voluptatum voluptas natus, nobis rerum voluptates aliquid repellendus blanditiis
+                    explicabo quod recusandae repellat fugiat! Laboriosam illum fugit qui nulla libero voluptatem
+                    veritatis. Aut iste, repellendus molestias, cupiditate facere ea incidunt repudiandae deserunt
+                    maiores fugiat voluptatum voluptatem, accusamus expedita quidem blanditiis nesciunt nostrum quasi.
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus at veritatis quod
+                    dicta, nulla totam ducimus velit ea debitis inventore vel, nam temporibus! Sequi fugiat asperiores
+                    ipsa illum architecto placeat repellat odit laudantium, facilis voluptas quaerat! Libero, ullam.
+                    Consequatur numquam, vitae illum repellat magnam illo incidunt aperiam voluptatibus voluptatum
+                    nesciunt laudantium? Sunt.</p>
+
+                <label for="#music">Pencet</label>
+                <audio id="music" src="https://youtu.be/BXXI_MnaA0Y">ss</audio>
+
+            </div>
+            <div class="sidebar">
+                <h3>Profil Penulis</h3>
+                <a href="http://instagram.com/iniralfi" target="_blank">
+                    <img class="profil" src="../Web3/image/Profil.jpeg" title="Ini Saya" alt="Foto Saya harusnya"></a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis alias dignissimos placeat suscipit
+                    iusto assumenda iure voluptatem aliquam, tenetur molestias vitae repellat odit culpa! Placeat ea
+                    eaque a non nam.</p>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <p><span class="copy">Copyright</span> By Rafli Pratama</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

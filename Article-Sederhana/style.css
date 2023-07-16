@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Style Saya */
+
+body {
+    background-color: rgb(35, 32, 32);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 18px;
+    height: 2000px;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+.watermark {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    display: inline-block;
+    background-color: rgb(12, 25, 63);
+}
+
+.watermark img {
+    width: 45px;
+    height: 45px;
+    margin: 0 30px;
+}
+
+.watermark ul li {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    top: -70px;
+    left: 300px;
+    margin: auto;
+}
+
+
+.watermark a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    margin: auto;
+}
+
+.watermark a:hover {
+    background-color: royalblue;
+    color: whitesmoke;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+img#ig {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+img#wa {
+    position: absolute;
+    right: 80px;
+    top: 18px;
+}
+
+.watermark h1 {
+    font-weight: bold;
+    padding: 45px;
+    font-size: 40px;
+    display: inline-block;
+}
+
+
+.container {
+    margin: 100px auto;
+    border: 1px solid rgb(200, 200, 200);
+    width: 960px;
+    background-color: rgb(33, 33, 33);
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.header ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.header a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header a:hover {
+    background-color: royalblue;
+    color: whitesmoke;
+}
+
+.hero {
+    height: 360px;
+    border: 2px solid royalblue;
+    box-sizing: border-box;
+    margin: 20px 0;
+
+    background-image: url(../Web3/image/hero.jpeg);
+    background-size: cover;
+    background-position: 0 -130px;
+}
+
+.main {
+    width: 600px;
+    border-right: 2px solid black;
+    float: left;
+}
+
+.main h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.main p.credit {
+    font-size: 10px;
+    padding: 0px 10px;
+    text-indent: 0px;
+}
+
+.name-cr {
+    color: royalblue;
+    padding: 5px;
+}
+
+.name-cr:hover {
+    background-color: royalblue;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.main p {
+    text-indent: 20px;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.sidebar {
+    float: right;
+    width: 300px;
+    border-left: 2px solid black;
+    height: 100%;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.profil {
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.sidebar p {
+    font-size: 10px;
+    padding: 10px;
+    text-indent: 10px;
+    line-height: 12px;
+}
+
+.footer {
+    width: 960px;
+    background-color: rgb(3, 3, 54);
+    height: 50px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+.footer .copy {
+    font-size: 20px;
+}
+
+
+
+/*Clearfix Buat clear float */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

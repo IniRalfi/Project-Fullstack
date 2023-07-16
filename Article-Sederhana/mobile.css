@@ -1,0 +1,52 @@
+/* Aturan Reset CSS */
+
+/* Aturan Style Saya */
+
+/* ... aturan CSS lainnya ... */
+
+/* Media Query untuk perangkat mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header ul li {
+        display: inline-block;
+        padding: 10px 0;
+    }
+
+    .header a {
+        color: royalblue
+    }
+
+    .main {
+        width: 100%;
+        border-right: none;
+        float: none;
+    }
+
+    .sidebar {
+        float: none;
+        width: 100%;
+        border-left: none;
+        margin-top: 20px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .hero {
+        background-size: cover;
+        background-position: 0 -10px;
+        height: 320px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
